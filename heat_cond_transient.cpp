@@ -20,7 +20,7 @@ using namespace std;
 using namespace mfem;
 using namespace chrono;
 namespace fs = std::filesystem;
-// Parallel Heat equation: du/dt = alpha * Laplacian(u)
+// Parallel Heat equation: du/dt = kappa * Laplacian(u)
 class ParHeatConductionOperator : public TimeDependentOperator
 {
 private:
@@ -205,13 +205,20 @@ void ParHeatConductionOperator::SetupImplicitSolver(const double dt)
 }
 void ParHeatConductionOperator::ImplicitSolve(const double dt, const Vector &u, Vector &du_dt)
 {
+    // computes du_dt, does not modify u directly.
+
     // Setup solver only if dt changed (major optimization)
     SetupImplicitSolver(dt);
+
     // Right hand side: b = M * u + dt * f
+    // Backward Euler: (M+dtK)*u[n+1] = M*u[n] + dt*f
     M_mat->Mult(u, *b_vec);
     b_vec->Add(dt, *f_vec);
+
+    // A=M+dt*K is the system matrix
     // Solve A * u_new = b (reuse pre-allocated vector)
     pcg->Mult(*b_vec, *u_new_vec);
+
     // Compute du_dt = (u_new - u_old) / dt
     // Vectorized operation for better performance
     const double inv_dt = 1.0 / dt;
@@ -234,6 +241,7 @@ void ParHeatConductionOperator::ImplicitSolve(const double dt, const Vector &u, 
         du_dt_data[ess_data[i]] = 0.0;
     }
 }
+
 ParHeatConductionOperator::~ParHeatConductionOperator()
 {
     delete M_mat;
@@ -538,7 +546,11 @@ int main(int argc, char *argv[])
         if (use_implicit)
         {
             auto t0 = high_resolution_clock::now();
+
+            // Solve equation to compute du/dt
             oper.ImplicitSolve(dt_real, u, du_dt);
+
+            // Update u as u = u + dt* du__dt
             add(u, dt_real, du_dt, u);
             auto step_end = high_resolution_clock::now();
             time_implicit += duration_cast<microseconds>(step_end - t0).count();
@@ -550,11 +562,13 @@ int main(int argc, char *argv[])
             t1 += oper.t1;
             t2 += oper.t2;
             t3 += oper.t3;
+
             // Check for instability (reduce across all processors)
             double max_du_dt_local = 0.0;
             for (int i = 0; i < du_dt.Size(); i++)
                 max_du_dt_local = std::max(max_du_dt_local, fabs(du_dt[i]));
             double max_du_dt_global;
+
             MPI_Allreduce(&max_du_dt_local, &max_du_dt_global, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
             if (max_du_dt_global > 1e6)
             {

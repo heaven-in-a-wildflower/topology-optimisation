@@ -206,14 +206,17 @@ void ComputeSteadyStateSensitivities(
     // Loop over elements
     for (int e = 0; e < ne; e++)
     {
+        // Get elem data
         const FiniteElement *fe = fes->GetFE(e);
         ElementTransformation *T = mesh->GetElementTransformation(e);
         int dof = fe->GetDof();
         int dim = fe->GetDim();
 
+        // Get global indices of dofs associated with the elem
         Array<int> vdofs;
         fes->GetElementVDofs(e, vdofs);
 
+        // Extract nodal values of rho and temp
         elem_rho.SetSize(dof);
         Vector elem_temp(dof);
         elem_sens.SetSize(dof);
@@ -221,25 +224,30 @@ void ComputeSteadyStateSensitivities(
         temperature.GetSubVector(vdofs, elem_temp);
         elem_sens = 0.0;
 
+        // set up quadrature
+        // choose an integration rule of order 2×element order to get sufficient accuracy.
         const IntegrationRule *ir = &IntRules.Get(fe->GetGeomType(), 2 * fe->GetOrder());
         dshape.SetSize(dof, dim);
         grad_T.SetSize(dim);
 
         for (int i = 0; i < ir->GetNPoints(); i++)
         {
+            // map from ref elem to physical elem
             const IntegrationPoint &ip = ir->IntPoint(i);
             T->SetIntPoint(&ip);
             double w = T->Weight() * ip.weight;
 
             Vector shape(dof);
-            fe->CalcShape(ip, shape);
-            fe->CalcDShape(ip, dshape);
+            fe->CalcShape(ip, shape); // value of shape function at that point
+            fe->CalcDShape(ip, dshape); // derivative of shape function in ref coords
 
+            // Compute interpolated density
             double rho_ip = 0.0;
             for (int j = 0; j < dof; j++)
                 rho_ip += elem_rho(j) * shape(j);
             rho_ip = max(rho_min, min(1.0, rho_ip));
 
+            // Compute delta T in ref and phys coords
             Vector grad_T_ref(dim);
             grad_T_ref = 0.0;
             for (int j = 0; j < dof; j++)
@@ -248,19 +256,25 @@ void ComputeSteadyStateSensitivities(
 
             T->InverseJacobian().MultTranspose(grad_T_ref, grad_T);
 
+            // compute |delta T|**2
             double grad_T_squared = 0.0;
             for (int d = 0; d < dim; d++)
                 grad_T_squared += grad_T(d) * grad_T(d);
 
+            // compute dk_drho
             double k_min = rho_min * 1e-3;
             double k_max = 1.0;
             double dk_drho = (k_max - k_min) * simp_exponent * pow(rho_ip, simp_exponent - 1.0);
+
+            // compute local sensitivity contribution : ∂ρ/∂J​=−(∂ρ/∂k)*​∣∇T∣**2
             double local_sensitivity = -dk_drho * grad_T_squared;
 
+            // accumulate weighted density
             for (int j = 0; j < dof; j++)
                 elem_sens(j) += local_sensitivity * shape(j) * w;
         }
 
+        // add elem contribution to global sensitivity
         sensitivity.AddElementVector(vdofs, elem_sens);
     }
 }
@@ -514,7 +528,13 @@ int main(int argc, char *argv[])
         // ====================================================================
         // STEP 4: OPTIMALITY CRITERIA UPDATE
         // ====================================================================
+        // updates rho to reduce compliance while trying to maintaining volume constraint.
+        
+        /*
+        Save the current densities in rho_old. The OC update uses the previous densities to compute candidate new densities; we don’t want on-the-fly updates influencing other entries.
+        */
 
+        // use biscetion method on lagrange multiplier.
         Vector rho_old = rho;
         double lam_min = 1e-10, lam_max = 1e10;
 
@@ -523,6 +543,7 @@ int main(int argc, char *argv[])
             double lam_mid = 0.5 * (lam_min + lam_max);
             double vol_sum = 0.0;
 
+            // Going over all elems in the mesh
             for (int i = 0; i < rho.Size(); i++)
             {
                 double rho_old_i = rho_old(i);
@@ -532,16 +553,23 @@ int main(int argc, char *argv[])
                 double rho_new_i;
                 if (Be <= 0)
                 {
+                    // ideally this should not happen
                     rho_new_i = max(rho_min, rho_old_i - move_limit);
                 }
                 else
                 {
+                    // update rho as per Be
                     rho_new_i = max(rho_min, min(1.0, rho_old_i * sqrt(Be)));
+                    
+                    // apply move constraints
                     rho_new_i = max(rho_old_i - move_limit, rho_new_i);
                     rho_new_i = min(rho_old_i + move_limit, rho_new_i);
                 }
 
+                // clamp again
                 rho_new_i = max(rho_min, min(1.0, rho_new_i));
+
+                // accumulate predcited total material
                 vol_sum += rho_new_i;
             }
 
@@ -557,6 +585,8 @@ int main(int argc, char *argv[])
         }
 
         // Apply final update
+
+        // lambda as mid point of shrunk bracket
         double lam_final = 0.5 * (lam_min + lam_max);
         double max_change = 0.0;
 
@@ -579,6 +609,7 @@ int main(int argc, char *argv[])
             }
 
             rho_new_i = max(rho_min, min(1.0, rho_new_i));
+            //track the largest abs change for convergence monitoring
             max_change = max(max_change, abs(rho_new_i - rho_old_i));
             rho(i) = rho_new_i;
         }

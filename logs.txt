@@ -1,0 +1,1004 @@
+Level-Set Topology Optimization - 2D Cantilever
+Target volume fraction: 0.4
+
+DOFs: 13041 (scalar), 26082 (vector)
+
+Initial volume fraction: 0.33571
+
+=== Iteration 1 ===
+Compliance: 35.895
+Volume fraction: 0.33571
+Volume error: -0.0642895
+Lagrange multiplier: 10
+Raw velocity: min=-2.00841e+06, max=10, avg=-444.438
+Velocity normalization factor: 2.00841e+06
+
+=== Iteration 2 ===
+Compliance: 36.2523
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.031
+Raw velocity: min=-2.069e+06, max=10.031, avg=-456.852
+Velocity normalization factor: 2.069e+06
+
+=== Iteration 3 ===
+Compliance: 36.3849
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.0621
+Raw velocity: min=-2.08506e+06, max=10.0621, avg=-460.621
+Velocity normalization factor: 2.08506e+06
+
+=== Iteration 4 ===
+Compliance: 36.5031
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.0931
+Raw velocity: min=-2.10034e+06, max=10.0931, avg=-464.046
+Velocity normalization factor: 2.10034e+06
+
+=== Iteration 5 ===
+Compliance: 36.5996
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.1241
+Raw velocity: min=-2.11061e+06, max=10.1241, avg=-466.645
+Velocity normalization factor: 2.11061e+06
+Reinitializing level-set...
+
+=== Iteration 6 ===
+Compliance: 36.4412
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.1552
+Raw velocity: min=-2.10576e+06, max=10.1552, avg=-463.954
+Velocity normalization factor: 2.10576e+06
+
+=== Iteration 7 ===
+Compliance: 36.6019
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.1862
+Raw velocity: min=-2.13106e+06, max=10.1862, avg=-469.264
+Velocity normalization factor: 2.13106e+06
+
+=== Iteration 8 ===
+Compliance: 36.7072
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.2172
+Raw velocity: min=-2.14286e+06, max=10.2172, avg=-472.211
+Velocity normalization factor: 2.14286e+06
+
+=== Iteration 9 ===
+Compliance: 36.7943
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.2483
+Raw velocity: min=-2.15007e+06, max=10.2483, avg=-474.425
+Velocity normalization factor: 2.15007e+06
+
+=== Iteration 10 ===
+Compliance: 36.8695
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.2793
+Raw velocity: min=-2.15435e+06, max=10.2793, avg=-476.18
+Velocity normalization factor: 2.15435e+06
+Reinitializing level-set...
+
+=== Iteration 11 ===
+Compliance: 36.6047
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.3103
+Raw velocity: min=-2.1343e+06, max=10.3103, avg=-470.028
+Velocity normalization factor: 2.1343e+06
+
+=== Iteration 12 ===
+Compliance: 36.745
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.3414
+Raw velocity: min=-2.15365e+06, max=10.3414, avg=-474.421
+Velocity normalization factor: 2.15365e+06
+Compliance change (5 iter): 0.00389276
+Volume error: 0.0620658
+
+=== Iteration 13 ===
+Compliance: 36.8298
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.3724
+Raw velocity: min=-2.16044e+06, max=10.3724, avg=-476.564
+Velocity normalization factor: 2.16044e+06
+Compliance change (5 iter): 0.00333021
+Volume error: 0.0620658
+
+=== Iteration 14 ===
+Compliance: 36.9011
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.4034
+Raw velocity: min=-2.1642e+06, max=10.4034, avg=-478.193
+Velocity normalization factor: 2.1642e+06
+Compliance change (5 iter): 0.00289457
+Volume error: 0.0620658
+
+=== Iteration 15 ===
+Compliance: 36.9643
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.4345
+Raw velocity: min=-2.16637e+06, max=10.4345, avg=-479.54
+Velocity normalization factor: 2.16637e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00256524
+Volume error: 0.0620658
+
+=== Iteration 16 ===
+Compliance: 36.6113
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.4655
+Raw velocity: min=-2.13442e+06, max=10.4655, avg=-470.562
+Velocity normalization factor: 2.13442e+06
+Compliance change (5 iter): 0.000178554
+Volume error: 0.0620658
+
+=== Iteration 17 ===
+Compliance: 36.7349
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.4965
+Raw velocity: min=-2.14819e+06, max=10.4965, avg=-474.131
+Velocity normalization factor: 2.14819e+06
+Compliance change (5 iter): 0.000273853
+Volume error: 0.0620658
+
+=== Iteration 18 ===
+Compliance: 36.8022
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.5276
+Raw velocity: min=-2.15113e+06, max=10.5276, avg=-475.586
+Velocity normalization factor: 2.15113e+06
+Compliance change (5 iter): 0.00075055
+Volume error: 0.0620658
+
+=== Iteration 19 ===
+Compliance: 36.8606
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.5586
+Raw velocity: min=-2.15253e+06, max=10.5586, avg=-476.752
+Velocity normalization factor: 2.15253e+06
+Compliance change (5 iter): 0.00109866
+Volume error: 0.0620658
+
+=== Iteration 20 ===
+Compliance: 36.914
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.5896
+Raw velocity: min=-2.15328e+06, max=10.5896, avg=-477.775
+Velocity normalization factor: 2.15328e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00136375
+Volume error: 0.0620658
+
+=== Iteration 21 ===
+Compliance: 36.504
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.6207
+Raw velocity: min=-2.11462e+06, max=10.6207, avg=-467.104
+Velocity normalization factor: 2.11462e+06
+Compliance change (5 iter): 0.00293843
+Volume error: 0.0620658
+
+=== Iteration 22 ===
+Compliance: 36.6689
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.6517
+Raw velocity: min=-2.13825e+06, max=10.6517, avg=-472.353
+Velocity normalization factor: 2.13825e+06
+Compliance change (5 iter): 0.00180108
+Volume error: 0.0620658
+
+=== Iteration 23 ===
+Compliance: 36.7316
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.6827
+Raw velocity: min=-2.14054e+06, max=10.6827, avg=-473.648
+Velocity normalization factor: 2.14054e+06
+Compliance change (5 iter): 0.00192248
+Volume error: 0.0620658
+
+=== Iteration 24 ===
+Compliance: 36.7854
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.7138
+Raw velocity: min=-2.14139e+06, max=10.7138, avg=-474.668
+Velocity normalization factor: 2.14139e+06
+Compliance change (5 iter): 0.00204475
+Volume error: 0.0620658
+
+=== Iteration 25 ===
+Compliance: 36.8349
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.7448
+Raw velocity: min=-2.14181e+06, max=10.7448, avg=-475.577
+Velocity normalization factor: 2.14181e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00214731
+Volume error: 0.0620658
+
+=== Iteration 26 ===
+Compliance: 36.3572
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.7758
+Raw velocity: min=-2.09159e+06, max=10.7758, avg=-462.597
+Velocity normalization factor: 2.09159e+06
+Compliance change (5 iter): 0.00403804
+Volume error: 0.0620658
+
+=== Iteration 27 ===
+Compliance: 36.5845
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.8069
+Raw velocity: min=-2.13018e+06, max=10.8069, avg=-470.374
+Velocity normalization factor: 2.13018e+06
+Compliance change (5 iter): 0.00230531
+Volume error: 0.0620658
+
+=== Iteration 28 ===
+Compliance: 36.6481
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.8379
+Raw velocity: min=-2.13286e+06, max=10.8379, avg=-471.707
+Velocity normalization factor: 2.13286e+06
+Compliance change (5 iter): 0.00227937
+Volume error: 0.0620658
+
+=== Iteration 29 ===
+Compliance: 36.7013
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.8689
+Raw velocity: min=-2.13379e+06, max=10.8689, avg=-472.714
+Velocity normalization factor: 2.13379e+06
+Compliance change (5 iter): 0.00229019
+Volume error: 0.0620658
+
+=== Iteration 30 ===
+Compliance: 36.7502
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.9
+Raw velocity: min=-2.13424e+06, max=10.9, avg=-473.606
+Velocity normalization factor: 2.13424e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.0023052
+Volume error: 0.0620658
+
+=== Iteration 31 ===
+Compliance: 36.1893
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.931
+Raw velocity: min=-2.06772e+06, max=10.931, avg=-457.617
+Velocity normalization factor: 2.06772e+06
+Compliance change (5 iter): 0.0046395
+Volume error: 0.0620658
+
+=== Iteration 32 ===
+Compliance: 36.4787
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.962
+Raw velocity: min=-2.12097e+06, max=10.962, avg=-467.864
+Velocity normalization factor: 2.12097e+06
+Compliance change (5 iter): 0.00290072
+Volume error: 0.0620658
+
+=== Iteration 33 ===
+Compliance: 36.5449
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 10.9931
+Raw velocity: min=-2.12418e+06, max=10.9931, avg=-469.275
+Velocity normalization factor: 2.12418e+06
+Compliance change (5 iter): 0.00282415
+Volume error: 0.0620658
+
+=== Iteration 34 ===
+Compliance: 36.5989
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.0241
+Raw velocity: min=-2.12524e+06, max=11.0241, avg=-470.297
+Velocity normalization factor: 2.12524e+06
+Compliance change (5 iter): 0.00279895
+Volume error: 0.0620658
+
+=== Iteration 35 ===
+Compliance: 36.6482
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.0551
+Raw velocity: min=-2.12575e+06, max=11.0551, avg=-471.194
+Velocity normalization factor: 2.12575e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00278274
+Volume error: 0.0620658
+
+=== Iteration 36 ===
+Compliance: 35.9985
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.0862
+Raw velocity: min=-2.04142e+06, max=11.0862, avg=-451.976
+Velocity normalization factor: 2.04142e+06
+Compliance change (5 iter): 0.00530104
+Volume error: 0.0620658
+
+=== Iteration 37 ===
+Compliance: 36.3481
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.1172
+Raw velocity: min=-2.10878e+06, max=11.1172, avg=-464.597
+Velocity normalization factor: 2.10878e+06
+Compliance change (5 iter): 0.00359335
+Volume error: 0.0620658
+
+=== Iteration 38 ===
+Compliance: 36.4176
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.1482
+Raw velocity: min=-2.11262e+06, max=11.1482, avg=-466.104
+Velocity normalization factor: 2.11262e+06
+Compliance change (5 iter): 0.00349432
+Volume error: 0.0620658
+
+=== Iteration 39 ===
+Compliance: 36.4729
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.1793
+Raw velocity: min=-2.11384e+06, max=11.1793, avg=-467.151
+Velocity normalization factor: 2.11384e+06
+Compliance change (5 iter): 0.00345382
+Volume error: 0.0620658
+
+=== Iteration 40 ===
+Compliance: 36.5232
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.2103
+Raw velocity: min=-2.11443e+06, max=11.2103, avg=-468.065
+Velocity normalization factor: 2.11443e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00342286
+Volume error: 0.0620658
+
+=== Iteration 41 ===
+Compliance: 35.7841
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.2413
+Raw velocity: min=-2.01232e+06, max=11.2413, avg=-445.641
+Velocity normalization factor: 2.01232e+06
+Compliance change (5 iter): 0.00599189
+Volume error: 0.0620658
+
+=== Iteration 42 ===
+Compliance: 36.1903
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.2723
+Raw velocity: min=-2.09284e+06, max=11.2723, avg=-460.464
+Velocity normalization factor: 2.09284e+06
+Compliance change (5 iter): 0.00436199
+Volume error: 0.0620658
+
+=== Iteration 43 ===
+Compliance: 36.2634
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.3034
+Raw velocity: min=-2.09731e+06, max=11.3034, avg=-462.075
+Velocity normalization factor: 2.09731e+06
+Compliance change (5 iter): 0.00425147
+Volume error: 0.0620658
+
+=== Iteration 44 ===
+Compliance: 36.3202
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.3344
+Raw velocity: min=-2.09871e+06, max=11.3344, avg=-463.15
+Velocity normalization factor: 2.09871e+06
+Compliance change (5 iter): 0.00420551
+Volume error: 0.0620658
+
+=== Iteration 45 ===
+Compliance: 36.3716
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.3654
+Raw velocity: min=-2.09938e+06, max=11.3654, avg=-464.082
+Velocity normalization factor: 2.09938e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00416852
+Volume error: 0.0620658
+
+=== Iteration 46 ===
+Compliance: 35.5464
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.3965
+Raw velocity: min=-1.98045e+06, max=11.3965, avg=-438.63
+Velocity normalization factor: 1.98045e+06
+Compliance change (5 iter): 0.00668484
+Volume error: 0.0620658
+
+=== Iteration 47 ===
+Compliance: 36.0044
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.4275
+Raw velocity: min=-2.07288e+06, max=11.4275, avg=-455.433
+Velocity normalization factor: 2.07288e+06
+Compliance change (5 iter): 0.00516225
+Volume error: 0.0620658
+
+=== Iteration 48 ===
+Compliance: 36.0812
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.4585
+Raw velocity: min=-2.07793e+06, max=11.4585, avg=-457.146
+Velocity normalization factor: 2.07793e+06
+Compliance change (5 iter): 0.00504944
+Volume error: 0.0620658
+
+=== Iteration 49 ===
+Compliance: 36.1394
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.4896
+Raw velocity: min=-2.07951e+06, max=11.4896, avg=-458.248
+Velocity normalization factor: 2.07951e+06
+Compliance change (5 iter): 0.00500129
+Volume error: 0.0620658
+
+=== Iteration 50 ===
+Compliance: 36.1919
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.5206
+Raw velocity: min=-2.08027e+06, max=11.5206, avg=-459.198
+Velocity normalization factor: 2.08027e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.0049628
+Volume error: 0.0620658
+
+=== Iteration 51 ===
+Compliance: 35.2871
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.5516
+Raw velocity: min=-1.94597e+06, max=11.5516, avg=-430.995
+Velocity normalization factor: 1.94597e+06
+Compliance change (5 iter): 0.00734804
+Volume error: 0.0620658
+
+=== Iteration 52 ===
+Compliance: 35.7917
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.5827
+Raw velocity: min=-2.04889e+06, max=11.5827, avg=-449.53
+Velocity normalization factor: 2.04889e+06
+Compliance change (5 iter): 0.00594368
+Volume error: 0.0620658
+
+=== Iteration 53 ===
+Compliance: 35.872
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.6137
+Raw velocity: min=-2.05446e+06, max=11.6137, avg=-451.337
+Velocity normalization factor: 2.05446e+06
+Compliance change (5 iter): 0.00583254
+Volume error: 0.0620658
+
+=== Iteration 54 ===
+Compliance: 35.9316
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.6447
+Raw velocity: min=-2.05621e+06, max=11.6447, avg=-452.466
+Velocity normalization factor: 2.05621e+06
+Compliance change (5 iter): 0.00578256
+Volume error: 0.0620658
+
+=== Iteration 55 ===
+Compliance: 35.9853
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.6758
+Raw velocity: min=-2.05705e+06, max=11.6758, avg=-453.432
+Velocity normalization factor: 2.05705e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.0057424
+Volume error: 0.0620658
+
+=== Iteration 56 ===
+Compliance: 35.0085
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.7068
+Raw velocity: min=-1.9091e+06, max=11.7068, avg=-422.801
+Velocity normalization factor: 1.9091e+06
+Compliance change (5 iter): 0.00795822
+Volume error: 0.0620658
+
+=== Iteration 57 ===
+Compliance: 35.5545
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.7378
+Raw velocity: min=-2.02104e+06, max=11.7378, avg=-442.821
+Velocity normalization factor: 2.02104e+06
+Compliance change (5 iter): 0.00666915
+Volume error: 0.0620658
+
+=== Iteration 58 ===
+Compliance: 35.6383
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.7689
+Raw velocity: min=-2.02707e+06, max=11.7689, avg=-444.712
+Velocity normalization factor: 2.02707e+06
+Compliance change (5 iter): 0.00655802
+Volume error: 0.0620658
+
+=== Iteration 59 ===
+Compliance: 35.6994
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.7999
+Raw velocity: min=-2.02898e+06, max=11.7999, avg=-445.866
+Velocity normalization factor: 2.02898e+06
+Compliance change (5 iter): 0.00650429
+Volume error: 0.0620658
+
+=== Iteration 60 ===
+Compliance: 35.7543
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.8309
+Raw velocity: min=-2.02989e+06, max=11.8309, avg=-446.848
+Velocity normalization factor: 2.02989e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00646136
+Volume error: 0.0620658
+
+=== Iteration 61 ===
+Compliance: 34.7137
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.862
+Raw velocity: min=-1.87012e+06, max=11.862, avg=-414.138
+Velocity normalization factor: 1.87012e+06
+Compliance change (5 iter): 0.00849295
+Volume error: 0.0620658
+
+=== Iteration 62 ===
+Compliance: 35.296
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.893
+Raw velocity: min=-1.98962e+06, max=11.893, avg=-435.392
+Velocity normalization factor: 1.98962e+06
+Compliance change (5 iter): 0.00732625
+Volume error: 0.0620658
+
+=== Iteration 63 ===
+Compliance: 35.3828
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.924
+Raw velocity: min=-1.99606e+06, max=11.924, avg=-437.355
+Velocity normalization factor: 1.99606e+06
+Compliance change (5 iter): 0.00722167
+Volume error: 0.0620658
+
+=== Iteration 64 ===
+Compliance: 35.4454
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.9551
+Raw velocity: min=-1.99809e+06, max=11.9551, avg=-438.531
+Velocity normalization factor: 1.99809e+06
+Compliance change (5 iter): 0.00716639
+Volume error: 0.0620658
+
+=== Iteration 65 ===
+Compliance: 35.5014
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 11.9861
+Raw velocity: min=-1.99907e+06, max=11.9861, avg=-439.527
+Velocity normalization factor: 1.99907e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00712206
+Volume error: 0.0620658
+
+=== Iteration 66 ===
+Compliance: 34.4055
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.0171
+Raw velocity: min=-1.82942e+06, max=12.0171, avg=-405.099
+Velocity normalization factor: 1.82942e+06
+Compliance change (5 iter): 0.00895875
+Volume error: 0.0620658
+
+=== Iteration 67 ===
+Compliance: 35.0187
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.0482
+Raw velocity: min=-1.95503e+06, max=12.0482, avg=-427.345
+Velocity normalization factor: 1.95503e+06
+Compliance change (5 iter): 0.00791639
+Volume error: 0.0620658
+
+=== Iteration 68 ===
+Compliance: 35.1082
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.0792
+Raw velocity: min=-1.9618e+06, max=12.0792, avg=-429.363
+Velocity normalization factor: 1.9618e+06
+Compliance change (5 iter): 0.00782213
+Volume error: 0.0620658
+
+=== Iteration 69 ===
+Compliance: 35.1721
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.1102
+Raw velocity: min=-1.96394e+06, max=12.1102, avg=-430.556
+Velocity normalization factor: 1.96394e+06
+Compliance change (5 iter): 0.00776992
+Volume error: 0.0620658
+
+=== Iteration 70 ===
+Compliance: 35.2292
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.1413
+Raw velocity: min=-1.96497e+06, max=12.1413, avg=-431.563
+Velocity normalization factor: 1.96497e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00772719
+Volume error: 0.0620658
+
+=== Iteration 71 ===
+Compliance: 34.0868
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.1723
+Raw velocity: min=-1.78737e+06, max=12.1723, avg=-395.784
+Velocity normalization factor: 1.78737e+06
+Compliance change (5 iter): 0.00935029
+Volume error: 0.0620658
+
+=== Iteration 72 ===
+Compliance: 34.7261
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.2033
+Raw velocity: min=-1.91775e+06, max=12.2033, avg=-418.794
+Velocity normalization factor: 1.91775e+06
+Compliance change (5 iter): 0.00842795
+Volume error: 0.0620658
+
+=== Iteration 73 ===
+Compliance: 34.8176
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.2344
+Raw velocity: min=-1.92479e+06, max=12.2344, avg=-420.852
+Velocity normalization factor: 1.92479e+06
+Compliance change (5 iter): 0.00834522
+Volume error: 0.0620658
+
+=== Iteration 74 ===
+Compliance: 34.8827
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.2654
+Raw velocity: min=-1.92699e+06, max=12.2654, avg=-422.057
+Velocity normalization factor: 1.92699e+06
+Compliance change (5 iter): 0.00829747
+Volume error: 0.0620658
+
+=== Iteration 75 ===
+Compliance: 34.9407
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.2964
+Raw velocity: min=-1.92806e+06, max=12.2964, avg=-423.071
+Velocity normalization factor: 1.92806e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.008258
+Volume error: 0.0620658
+
+=== Iteration 76 ===
+Compliance: 33.7612
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.3275
+Raw velocity: min=-1.7444e+06, max=12.3275, avg=-386.303
+Velocity normalization factor: 1.7444e+06
+Compliance change (5 iter): 0.00964306
+Volume error: 0.0620658
+
+=== Iteration 77 ===
+Compliance: 34.4221
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.3585
+Raw velocity: min=-1.87833e+06, max=12.3585, avg=-409.875
+Velocity normalization factor: 1.87833e+06
+Compliance change (5 iter): 0.00882953
+Volume error: 0.0620658
+
+=== Iteration 78 ===
+Compliance: 34.5154
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.3895
+Raw velocity: min=-1.88557e+06, max=12.3895, avg=-411.96
+Velocity normalization factor: 1.88557e+06
+Compliance change (5 iter): 0.00875514
+Volume error: 0.0620658
+
+=== Iteration 79 ===
+Compliance: 34.5815
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.4206
+Raw velocity: min=-1.88783e+06, max=12.4206, avg=-413.172
+Velocity normalization factor: 1.88783e+06
+Compliance change (5 iter): 0.00871037
+Volume error: 0.0620658
+
+=== Iteration 80 ===
+Compliance: 34.6402
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.4516
+Raw velocity: min=-1.88892e+06, max=12.4516, avg=-414.189
+Velocity normalization factor: 1.88892e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00867311
+Volume error: 0.0620658
+
+=== Iteration 81 ===
+Compliance: 33.4329
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.4826
+Raw velocity: min=-1.70098e+06, max=12.4826, avg=-376.774
+Velocity normalization factor: 1.70098e+06
+Compliance change (5 iter): 0.0098204
+Volume error: 0.0620658
+
+=== Iteration 82 ===
+Compliance: 34.1114
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.5137
+Raw velocity: min=-1.83741e+06, max=12.5137, avg=-400.73
+Velocity normalization factor: 1.83741e+06
+Compliance change (5 iter): 0.00911032
+Volume error: 0.0620658
+
+=== Iteration 83 ===
+Compliance: 34.206
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.5447
+Raw velocity: min=-1.84479e+06, max=12.5447, avg=-402.829
+Velocity normalization factor: 1.84479e+06
+Compliance change (5 iter): 0.00904591
+Volume error: 0.0620658
+
+=== Iteration 84 ===
+Compliance: 34.2728
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.5757
+Raw velocity: min=-1.84708e+06, max=12.5757, avg=-404.042
+Velocity normalization factor: 1.84708e+06
+Compliance change (5 iter): 0.00900606
+Volume error: 0.0620658
+
+=== Iteration 85 ===
+Compliance: 34.3322
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.6068
+Raw velocity: min=-1.84818e+06, max=12.6068, avg=-405.059
+Velocity normalization factor: 1.84818e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00897258
+Volume error: 0.0620658
+
+=== Iteration 86 ===
+Compliance: 33.1057
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.6378
+Raw velocity: min=-1.65765e+06, max=12.6378, avg=-367.314
+Velocity normalization factor: 1.65765e+06
+Compliance change (5 iter): 0.00988258
+Volume error: 0.0620658
+
+=== Iteration 87 ===
+Compliance: 33.798
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.6688
+Raw velocity: min=-1.79565e+06, max=12.6688, avg=-391.499
+Velocity normalization factor: 1.79565e+06
+Compliance change (5 iter): 0.00927016
+Volume error: 0.0620658
+
+=== Iteration 88 ===
+Compliance: 33.8936
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.6999
+Raw velocity: min=-1.80313e+06, max=12.6999, avg=-393.601
+Velocity normalization factor: 1.80313e+06
+Compliance change (5 iter): 0.00921674
+Volume error: 0.0620658
+
+=== Iteration 89 ===
+Compliance: 33.961
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.7309
+Raw velocity: min=-1.80543e+06, max=12.7309, avg=-394.811
+Velocity normalization factor: 1.80543e+06
+Compliance change (5 iter): 0.00918297
+Volume error: 0.0620658
+
+=== Iteration 90 ===
+Compliance: 34.0207
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.7619
+Raw velocity: min=-1.80653e+06, max=12.7619, avg=-395.823
+Velocity normalization factor: 1.80653e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00915483
+Volume error: 0.0620658
+
+=== Iteration 91 ===
+Compliance: 32.7834
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.793
+Raw velocity: min=-1.61492e+06, max=12.793, avg=-358.035
+Velocity normalization factor: 1.61492e+06
+Compliance change (5 iter): 0.00983257
+Volume error: 0.0620658
+
+=== Iteration 92 ===
+Compliance: 33.4862
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.824
+Raw velocity: min=-1.7537e+06, max=12.824, avg=-382.319
+Velocity normalization factor: 1.7537e+06
+Compliance change (5 iter): 0.00931188
+Volume error: 0.0620658
+
+=== Iteration 93 ===
+Compliance: 33.5823
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.855
+Raw velocity: min=-1.76123e+06, max=12.855, avg=-384.414
+Velocity normalization factor: 1.76123e+06
+Compliance change (5 iter): 0.00926943
+Volume error: 0.0620658
+
+=== Iteration 94 ===
+Compliance: 33.6499
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.8861
+Raw velocity: min=-1.76353e+06, max=12.8861, avg=-385.616
+Velocity normalization factor: 1.76353e+06
+Compliance change (5 iter): 0.00924268
+Volume error: 0.0620658
+
+=== Iteration 95 ===
+Compliance: 33.7099
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.9171
+Raw velocity: min=-1.76463e+06, max=12.9171, avg=-386.619
+Velocity normalization factor: 1.76463e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00922082
+Volume error: 0.0620658
+
+=== Iteration 96 ===
+Compliance: 32.4695
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.9481
+Raw velocity: min=-1.5733e+06, max=12.9481, avg=-349.045
+Velocity normalization factor: 1.5733e+06
+Compliance change (5 iter): 0.00966651
+Volume error: 0.0620658
+
+=== Iteration 97 ===
+Compliance: 33.1799
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 12.9792
+Raw velocity: min=-1.71221e+06, max=12.9792, avg=-373.316
+Velocity normalization factor: 1.71221e+06
+Compliance change (5 iter): 0.00923135
+Volume error: 0.0620658
+
+=== Iteration 98 ===
+Compliance: 33.2762
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 13.0102
+Raw velocity: min=-1.71975e+06, max=13.0102, avg=-375.396
+Velocity normalization factor: 1.71975e+06
+Compliance change (5 iter): 0.00919827
+Volume error: 0.0620658
+
+=== Iteration 99 ===
+Compliance: 33.3439
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 13.0412
+Raw velocity: min=-1.72203e+06, max=13.0412, avg=-376.586
+Velocity normalization factor: 1.72203e+06
+Compliance change (5 iter): 0.00917788
+Volume error: 0.0620658
+
+=== Iteration 100 ===
+Compliance: 33.4039
+Volume fraction: 0.337934
+Volume error: -0.0620658
+Lagrange multiplier: 13.0723
+Raw velocity: min=-1.72312e+06, max=13.0723, avg=-377.578
+Velocity normalization factor: 1.72312e+06
+Reinitializing level-set...
+Compliance change (5 iter): 0.00916157
+Volume error: 0.0620658
