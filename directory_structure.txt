@@ -1,0 +1,33 @@
+Directory structure:
+project_folder/
+|
++-- mesh_files/
+|	//Contains any mesh file you wish to run simulation on
+|	//Default mesh files have been set in respective simulation files
++-- heat_cond_steady_state_solns/
+|	
++-- heat_cond_transient_solns/
+|
++-- simp_steady_state_solns/
+|
++-- simp_transient_solns/
+|
++-- simp_3d_solns/
+|
++-- heat_cond_steady_state.cpp
++-- heat_cond_transient.cpp
++-- simp.cpp
++-- simp_transient.cpp
++-- simp_3d.cpp
+
+The folders listed above in the project directory contain the solutions for the corresponding solutions which can be visualised using glvis. The instructions to run each file are clearly mentioned at the top of each file.
+
+Assumptions-
+You are on a Linux machine
+You have MPI, OpenMP, OpenBLAS installed
+../mfem-4.8/ contains MFEM headers and the compiled libmfem.a
+../hypre/src/hypre/include contains HYPRE headers
+../hypre/src/hypre/lib contains the compiled libHYPRE.a
+../metis-4.0 contains the compiled libmetis.a
+../glvis-4.4/ contains the executable glvis
+

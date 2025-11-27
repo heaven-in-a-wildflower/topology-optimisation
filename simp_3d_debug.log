@@ -1,0 +1,1743 @@
+=== DEBUG LOG ===
+Timestamp: Nov 27 2025 20:48:15
+==================
+
+
+======================================
+  INITIALIZATION
+======================================
+[DEBUG] Volume fraction target: 0.3
+[DEBUG] Convection coefficient: 100
+[DEBUG] Heat flux: 5000
+[DEBUG] Fixed zone fraction: 0.05
+
+======================================
+  Mesh Generation
+======================================
+[DEBUG] Radial divisions: 6
+[DEBUG] Height divisions: 20
+[DEBUG] Angular divisions: 20
+[DEBUG] Cylinder radius: 0.5
+[DEBUG] Cylinder height: 2
+[DEBUG] Total vertices: 2940
+[DEBUG] Total elements: 2400
+[DEBUG] Total boundary elements: 1040
+
+======================================
+  Boundary Face Analysis
+======================================
+[DEBUG] Top boundary faces: 120
+[DEBUG] Bottom boundary faces: 120
+[DEBUG] Cylindrical boundary faces: 400
+[DEBUG] DOFs: 2940
+
+======================================
+  Fixed DOF Identification
+======================================
+[DEBUG] Total fixed DOFs: 560
+[DEBUG] Fixed DOF percentage: 19.0476
+
+======================================
+  ITERATION 1
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 201
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.08657e+08
+[DEBUG] Max temperature: 28092.3
+[DEBUG] Min temperature: 74.9999
+[DEBUG] Avg temperature: 14083.6
+[DEBUG] Volume fraction: 0.428513
+[DEBUG] Avg sensitivity magnitude: 135947
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -243310
+[DEBUG] Max sensitivity: -17331.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.1
+[DEBUG] Binary design %: 0
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_1.gf
+
+======================================
+  ITERATION 2
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 235
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.54194e+08
+[DEBUG] Max temperature: 39881
+[DEBUG] Min temperature: 74.9998
+[DEBUG] Avg temperature: 19978
+[DEBUG] Volume fraction: 0.346872
+[DEBUG] Avg sensitivity magnitude: 286669
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -547292
+[DEBUG] Max sensitivity: -24385.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.1
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 3
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 268
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.9353e+08
+[DEBUG] Max temperature: 50092.4
+[DEBUG] Min temperature: 73.4452
+[DEBUG] Avg temperature: 25070.6
+[DEBUG] Volume fraction: 0.297114
+[DEBUG] Avg sensitivity magnitude: 459540
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -847528
+[DEBUG] Max sensitivity: -34603.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0568915
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 4
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 273
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.76405e+08
+[DEBUG] Max temperature: 45691.3
+[DEBUG] Min temperature: 71.6464
+[DEBUG] Avg temperature: 22854.4
+[DEBUG] Volume fraction: 0.300212
+[DEBUG] Avg sensitivity magnitude: 374869
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -678502
+[DEBUG] Max sensitivity: -34654.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0417476
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 5
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 279
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.66025e+08
+[DEBUG] Max temperature: 43028.9
+[DEBUG] Min temperature: 70.2988
+[DEBUG] Avg temperature: 21511.2
+[DEBUG] Volume fraction: 0.302454
+[DEBUG] Avg sensitivity magnitude: 328821
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -578223
+[DEBUG] Max sensitivity: -33772.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0386668
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 6
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 281
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.5903e+08
+[DEBUG] Max temperature: 41237.7
+[DEBUG] Min temperature: 69.2481
+[DEBUG] Avg temperature: 20606
+[DEBUG] Volume fraction: 0.304027
+[DEBUG] Avg sensitivity magnitude: 299816
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -523712
+[DEBUG] Max sensitivity: -32766.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0342252
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 7
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 286
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.54092e+08
+[DEBUG] Max temperature: 39975
+[DEBUG] Min temperature: 68.4073
+[DEBUG] Avg temperature: 19966.9
+[DEBUG] Volume fraction: 0.305118
+[DEBUG] Avg sensitivity magnitude: 280300
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -483858
+[DEBUG] Max sensitivity: -31860.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0317152
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 8
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 303
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.50491e+08
+[DEBUG] Max temperature: 39055.6
+[DEBUG] Min temperature: 67.7225
+[DEBUG] Avg temperature: 19500.8
+[DEBUG] Volume fraction: 0.305881
+[DEBUG] Avg sensitivity magnitude: 266575
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -454549
+[DEBUG] Max sensitivity: -31093.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0304039
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 9
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 303
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.47789e+08
+[DEBUG] Max temperature: 38366.8
+[DEBUG] Min temperature: 67.1558
+[DEBUG] Avg temperature: 19151.2
+[DEBUG] Volume fraction: 0.306428
+[DEBUG] Avg sensitivity magnitude: 256562
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -432572
+[DEBUG] Max sensitivity: -30453.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0290349
+[DEBUG] Binary design %: 0
+
+======================================
+  ITERATION 10
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 316
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.45703e+08
+[DEBUG] Max temperature: 37835.8
+[DEBUG] Min temperature: 66.6823
+[DEBUG] Avg temperature: 18881.2
+[DEBUG] Volume fraction: 0.306841
+[DEBUG] Avg sensitivity magnitude: 249004
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -415685
+[DEBUG] Max sensitivity: -29918
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0277087
+[DEBUG] Binary design %: 4.7619
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_10.gf
+
+======================================
+  ITERATION 11
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 321
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.44052e+08
+[DEBUG] Max temperature: 37415.8
+[DEBUG] Min temperature: 66.2793
+[DEBUG] Avg temperature: 18667.5
+[DEBUG] Volume fraction: 0.307171
+[DEBUG] Avg sensitivity magnitude: 243129
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -402404
+[DEBUG] Max sensitivity: -29467
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0264975
+[DEBUG] SIMP exponent updated: 1.05
+[DEBUG] Binary design %: 7.48299
+
+======================================
+  ITERATION 12
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 340
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.52221e+08
+[DEBUG] Max temperature: 39549.8
+[DEBUG] Min temperature: 65.4057
+[DEBUG] Avg temperature: 19725
+[DEBUG] Volume fraction: 0.307455
+[DEBUG] Avg sensitivity magnitude: 265832
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -443554
+[DEBUG] Max sensitivity: -31856.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0266973
+[DEBUG] Binary design %: 7.48299
+
+======================================
+  ITERATION 13
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 346
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.50882e+08
+[DEBUG] Max temperature: 39209.6
+[DEBUG] Min temperature: 65.0708
+[DEBUG] Avg temperature: 19551.7
+[DEBUG] Volume fraction: 0.307701
+[DEBUG] Avg sensitivity magnitude: 261016
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -432562
+[DEBUG] Max sensitivity: -31430.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0255156
+[DEBUG] Binary design %: 8.84354
+
+======================================
+  ITERATION 14
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 350
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.49747e+08
+[DEBUG] Max temperature: 38921.4
+[DEBUG] Min temperature: 64.7797
+[DEBUG] Avg temperature: 19404.8
+[DEBUG] Volume fraction: 0.307935
+[DEBUG] Avg sensitivity magnitude: 256979
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -423541
+[DEBUG] Max sensitivity: -31067.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0245504
+[DEBUG] Binary design %: 13.6054
+
+======================================
+  ITERATION 15
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 355
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.48766e+08
+[DEBUG] Max temperature: 38672.4
+[DEBUG] Min temperature: 64.5248
+[DEBUG] Avg temperature: 19277.9
+[DEBUG] Volume fraction: 0.308162
+[DEBUG] Avg sensitivity magnitude: 253523
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -415917
+[DEBUG] Max sensitivity: -30750.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0237432
+[DEBUG] Binary design %: 14.966
+
+======================================
+  ITERATION 16
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 361
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.479e+08
+[DEBUG] Max temperature: 38452.5
+[DEBUG] Min temperature: 64.2995
+[DEBUG] Avg temperature: 19165.8
+[DEBUG] Volume fraction: 0.308391
+[DEBUG] Avg sensitivity magnitude: 250495
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -409316
+[DEBUG] Max sensitivity: -30469.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0230423
+[DEBUG] SIMP exponent updated: 1.1025
+[DEBUG] Binary design %: 16.3265
+
+======================================
+  ITERATION 17
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 382
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.56961e+08
+[DEBUG] Max temperature: 40817.3
+[DEBUG] Min temperature: 63.4839
+[DEBUG] Avg temperature: 20338.6
+[DEBUG] Volume fraction: 0.308624
+[DEBUG] Avg sensitivity magnitude: 275528
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -457006
+[DEBUG] Max sensitivity: -33073.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0240325
+[DEBUG] Binary design %: 16.3265
+
+======================================
+  ITERATION 18
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 388
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.56116e+08
+[DEBUG] Max temperature: 40602.8
+[DEBUG] Min temperature: 63.2762
+[DEBUG] Avg temperature: 20229.4
+[DEBUG] Volume fraction: 0.308847
+[DEBUG] Avg sensitivity magnitude: 272488
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -450197
+[DEBUG] Max sensitivity: -32766.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.02313
+[DEBUG] Binary design %: 16.3265
+
+======================================
+  ITERATION 19
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 392
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.55344e+08
+[DEBUG] Max temperature: 40406.6
+[DEBUG] Min temperature: 63.0904
+[DEBUG] Avg temperature: 20129.4
+[DEBUG] Volume fraction: 0.309077
+[DEBUG] Avg sensitivity magnitude: 269730
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -444362
+[DEBUG] Max sensitivity: -32498.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0224963
+[DEBUG] Binary design %: 16.3265
+
+======================================
+  ITERATION 20
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 392
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.54632e+08
+[DEBUG] Max temperature: 40225.4
+[DEBUG] Min temperature: 62.923
+[DEBUG] Avg temperature: 20037.2
+[DEBUG] Volume fraction: 0.309313
+[DEBUG] Avg sensitivity magnitude: 267202
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -439151
+[DEBUG] Max sensitivity: -32256.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0219815
+[DEBUG] Binary design %: 17.6871
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_20.gf
+
+======================================
+  ITERATION 21
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 414
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.53969e+08
+[DEBUG] Max temperature: 40056.9
+[DEBUG] Min temperature: 62.7713
+[DEBUG] Avg temperature: 19951.4
+[DEBUG] Volume fraction: 0.309552
+[DEBUG] Avg sensitivity magnitude: 264865
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -434406
+[DEBUG] Max sensitivity: -32035.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0215584
+[DEBUG] SIMP exponent updated: 1.15763
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 22
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 444
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.63757e+08
+[DEBUG] Max temperature: 42610.9
+[DEBUG] Min temperature: 61.9542
+[DEBUG] Avg temperature: 21218.3
+[DEBUG] Volume fraction: 0.309799
+[DEBUG] Avg sensitivity magnitude: 291746
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -487472
+[DEBUG] Max sensitivity: -34844.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0231023
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 23
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 445
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.63055e+08
+[DEBUG] Max temperature: 42432.4
+[DEBUG] Min temperature: 61.8034
+[DEBUG] Avg temperature: 21127.6
+[DEBUG] Volume fraction: 0.310035
+[DEBUG] Avg sensitivity magnitude: 289190
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -481804
+[DEBUG] Max sensitivity: -34575.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0221947
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 24
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 448
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.62394e+08
+[DEBUG] Max temperature: 42263.9
+[DEBUG] Min temperature: 61.6664
+[DEBUG] Avg temperature: 21041.9
+[DEBUG] Volume fraction: 0.310276
+[DEBUG] Avg sensitivity magnitude: 286800
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -476955
+[DEBUG] Max sensitivity: -34340.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0216724
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 25
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 462
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.61763e+08
+[DEBUG] Max temperature: 42103.3
+[DEBUG] Min temperature: 61.5406
+[DEBUG] Avg temperature: 20960.4
+[DEBUG] Volume fraction: 0.310521
+[DEBUG] Avg sensitivity magnitude: 284540
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -472525
+[DEBUG] Max sensitivity: -34125.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0212745
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 26
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 461
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.61163e+08
+[DEBUG] Max temperature: 41950.2
+[DEBUG] Min temperature: 61.4246
+[DEBUG] Avg temperature: 20882.6
+[DEBUG] Volume fraction: 0.310769
+[DEBUG] Avg sensitivity magnitude: 282398
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -468388
+[DEBUG] Max sensitivity: -33925.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.020947
+[DEBUG] SIMP exponent updated: 1.21551
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 27
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 486
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.71716e+08
+[DEBUG] Max temperature: 44704
+[DEBUG] Min temperature: 60.5839
+[DEBUG] Avg temperature: 22248.5
+[DEBUG] Volume fraction: 0.31102
+[DEBUG] Avg sensitivity magnitude: 311325
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -527198
+[DEBUG] Max sensitivity: -36957.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0229318
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 28
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 487
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.7106e+08
+[DEBUG] Max temperature: 44536.8
+[DEBUG] Min temperature: 60.4618
+[DEBUG] Avg temperature: 22163.7
+[DEBUG] Volume fraction: 0.311261
+[DEBUG] Avg sensitivity magnitude: 308906
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -521761
+[DEBUG] Max sensitivity: -36694.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0218767
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 29
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 492
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.70431e+08
+[DEBUG] Max temperature: 44376.3
+[DEBUG] Min temperature: 60.3497
+[DEBUG] Avg temperature: 22082.3
+[DEBUG] Volume fraction: 0.311503
+[DEBUG] Avg sensitivity magnitude: 306611
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -517211
+[DEBUG] Max sensitivity: -36468.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0213473
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 30
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 493
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.69826e+08
+[DEBUG] Max temperature: 44221.8
+[DEBUG] Min temperature: 60.2453
+[DEBUG] Avg temperature: 22003.9
+[DEBUG] Volume fraction: 0.311747
+[DEBUG] Avg sensitivity magnitude: 304419
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -513039
+[DEBUG] Max sensitivity: -36260.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0209958
+[DEBUG] Binary design %: 17.6871
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_30.gf
+
+======================================
+  ITERATION 31
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 498
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.69239e+08
+[DEBUG] Max temperature: 44071.8
+[DEBUG] Min temperature: 60.1475
+[DEBUG] Avg temperature: 21927.9
+[DEBUG] Volume fraction: 0.311995
+[DEBUG] Avg sensitivity magnitude: 302305
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -509083
+[DEBUG] Max sensitivity: -36064.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0206789
+[DEBUG] SIMP exponent updated: 1.27628
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 32
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 523
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.80635e+08
+[DEBUG] Max temperature: 47045.7
+[DEBUG] Min temperature: 59.2737
+[DEBUG] Avg temperature: 23402.8
+[DEBUG] Volume fraction: 0.312241
+[DEBUG] Avg sensitivity magnitude: 333581
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -574403
+[DEBUG] Max sensitivity: -39341.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0230732
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 33
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 529
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.79985e+08
+[DEBUG] Max temperature: 46879.8
+[DEBUG] Min temperature: 59.1671
+[DEBUG] Avg temperature: 23318.8
+[DEBUG] Volume fraction: 0.312478
+[DEBUG] Avg sensitivity magnitude: 331158
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -568787
+[DEBUG] Max sensitivity: -39068.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0217872
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 34
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 530
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.79355e+08
+[DEBUG] Max temperature: 46718.9
+[DEBUG] Min temperature: 59.0677
+[DEBUG] Avg temperature: 23237.2
+[DEBUG] Volume fraction: 0.312717
+[DEBUG] Avg sensitivity magnitude: 328840
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -564241
+[DEBUG] Max sensitivity: -38837.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.021196
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 35
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 533
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.78748e+08
+[DEBUG] Max temperature: 46563.7
+[DEBUG] Min temperature: 58.9744
+[DEBUG] Avg temperature: 23158.7
+[DEBUG] Volume fraction: 0.312953
+[DEBUG] Avg sensitivity magnitude: 326622
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -560098
+[DEBUG] Max sensitivity: -38624.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0208348
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 36
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 533
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.78155e+08
+[DEBUG] Max temperature: 46412.2
+[DEBUG] Min temperature: 58.8861
+[DEBUG] Avg temperature: 23081.9
+[DEBUG] Volume fraction: 0.313192
+[DEBUG] Avg sensitivity magnitude: 324470
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -556149
+[DEBUG] Max sensitivity: -38423.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0205184
+[DEBUG] SIMP exponent updated: 1.3401
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 37
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 555
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.9048e+08
+[DEBUG] Max temperature: 49628.7
+[DEBUG] Min temperature: 57.9739
+[DEBUG] Avg temperature: 24676.9
+[DEBUG] Volume fraction: 0.31343
+[DEBUG] Avg sensitivity magnitude: 358419
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -628831
+[DEBUG] Max sensitivity: -41969.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0188492
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 38
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 558
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.89853e+08
+[DEBUG] Max temperature: 49468.4
+[DEBUG] Min temperature: 57.8862
+[DEBUG] Avg temperature: 24599.7
+[DEBUG] Volume fraction: 0.313642
+[DEBUG] Avg sensitivity magnitude: 356080
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -625292
+[DEBUG] Max sensitivity: -41769.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0138149
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 39
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 558
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.8933e+08
+[DEBUG] Max temperature: 49334.4
+[DEBUG] Min temperature: 57.8246
+[DEBUG] Avg temperature: 24529.9
+[DEBUG] Volume fraction: 0.313817
+[DEBUG] Avg sensitivity magnitude: 354228
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -625836
+[DEBUG] Max sensitivity: -41729.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0126108
+[DEBUG] Binary design %: 17.6871
+
+======================================
+  ITERATION 40
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 560
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.88835e+08
+[DEBUG] Max temperature: 49207.5
+[DEBUG] Min temperature: 57.7637
+[DEBUG] Avg temperature: 24465.1
+[DEBUG] Volume fraction: 0.313987
+[DEBUG] Avg sensitivity magnitude: 352438
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -624774
+[DEBUG] Max sensitivity: -41630.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.011628
+[DEBUG] Binary design %: 17.6871
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_40.gf
+
+======================================
+  ITERATION 41
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 574
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.8836e+08
+[DEBUG] Max temperature: 49086
+[DEBUG] Min temperature: 57.7037
+[DEBUG] Avg temperature: 24403.3
+[DEBUG] Volume fraction: 0.314153
+[DEBUG] Avg sensitivity magnitude: 350706
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -623027
+[DEBUG] Max sensitivity: -41504.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.01084
+[DEBUG] SIMP exponent updated: 1.4071
+[DEBUG] Binary design %: 18.3673
+
+======================================
+  ITERATION 42
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 625
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.01942e+08
+[DEBUG] Max temperature: 52629.7
+[DEBUG] Min temperature: 56.7762
+[DEBUG] Avg temperature: 26160.6
+[DEBUG] Volume fraction: 0.314319
+[DEBUG] Avg sensitivity magnitude: 388607
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -708486
+[DEBUG] Max sensitivity: -45503.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0100032
+[DEBUG] Binary design %: 19.7279
+
+======================================
+  ITERATION 43
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 627
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.01429e+08
+[DEBUG] Max temperature: 52498.5
+[DEBUG] Min temperature: 56.7033
+[DEBUG] Avg temperature: 26094.1
+[DEBUG] Volume fraction: 0.314465
+[DEBUG] Avg sensitivity magnitude: 386620
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -704711
+[DEBUG] Max sensitivity: -45265.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00955722
+[DEBUG] Binary design %: 21.0884
+
+======================================
+  ITERATION 44
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 614
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.00929e+08
+[DEBUG] Max temperature: 52370.6
+[DEBUG] Min temperature: 56.6319
+[DEBUG] Avg temperature: 26029.1
+[DEBUG] Volume fraction: 0.314612
+[DEBUG] Avg sensitivity magnitude: 384700
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -701486
+[DEBUG] Max sensitivity: -45043.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00918615
+[DEBUG] Binary design %: 21.0884
+
+======================================
+  ITERATION 45
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 618
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.00444e+08
+[DEBUG] Max temperature: 52246.7
+[DEBUG] Min temperature: 56.562
+[DEBUG] Avg temperature: 25966.3
+[DEBUG] Volume fraction: 0.314757
+[DEBUG] Avg sensitivity magnitude: 382851
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -698524
+[DEBUG] Max sensitivity: -44828.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00887344
+[DEBUG] Binary design %: 22.449
+
+======================================
+  ITERATION 46
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 635
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 1.99971e+08
+[DEBUG] Max temperature: 52125.8
+[DEBUG] Min temperature: 56.4935
+[DEBUG] Avg temperature: 25904.9
+[DEBUG] Volume fraction: 0.314904
+[DEBUG] Avg sensitivity magnitude: 381055
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -695681
+[DEBUG] Max sensitivity: -44619.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00857261
+[DEBUG] SIMP exponent updated: 1.47746
+[DEBUG] Binary design %: 22.449
+
+======================================
+  ITERATION 47
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 687
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.14871e+08
+[DEBUG] Max temperature: 56013.4
+[DEBUG] Min temperature: 55.5199
+[DEBUG] Avg temperature: 27832.8
+[DEBUG] Volume fraction: 0.31505
+[DEBUG] Avg sensitivity magnitude: 423090
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -792425
+[DEBUG] Max sensitivity: -48944.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00895509
+[DEBUG] Binary design %: 22.449
+
+======================================
+  ITERATION 48
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 691
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.14359e+08
+[DEBUG] Max temperature: 55882.7
+[DEBUG] Min temperature: 55.4383
+[DEBUG] Avg temperature: 27766.5
+[DEBUG] Volume fraction: 0.315176
+[DEBUG] Avg sensitivity magnitude: 421034
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -787654
+[DEBUG] Max sensitivity: -48626
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00868706
+[DEBUG] Binary design %: 22.449
+
+======================================
+  ITERATION 49
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 692
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.1386e+08
+[DEBUG] Max temperature: 55755.1
+[DEBUG] Min temperature: 55.3587
+[DEBUG] Avg temperature: 27701.7
+[DEBUG] Volume fraction: 0.315305
+[DEBUG] Avg sensitivity magnitude: 419062
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -783871
+[DEBUG] Max sensitivity: -48341.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00856712
+[DEBUG] Binary design %: 22.449
+
+======================================
+  ITERATION 50
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 693
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.13374e+08
+[DEBUG] Max temperature: 55631.3
+[DEBUG] Min temperature: 55.2811
+[DEBUG] Avg temperature: 27638.7
+[DEBUG] Volume fraction: 0.315433
+[DEBUG] Avg sensitivity magnitude: 417165
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -780507
+[DEBUG] Max sensitivity: -48074.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00850138
+[DEBUG] Binary design %: 22.449
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_50.gf
+
+======================================
+  ITERATION 51
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 693
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.12903e+08
+[DEBUG] Max temperature: 55511
+[DEBUG] Min temperature: 55.2052
+[DEBUG] Avg temperature: 27577.6
+[DEBUG] Volume fraction: 0.315561
+[DEBUG] Avg sensitivity magnitude: 415336
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -777368
+[DEBUG] Max sensitivity: -47819.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00845096
+[DEBUG] SIMP exponent updated: 1.55133
+[DEBUG] Binary design %: 23.1293
+
+======================================
+  ITERATION 52
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 754
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.29314e+08
+[DEBUG] Max temperature: 59792.7
+[DEBUG] Min temperature: 54.1868
+[DEBUG] Avg temperature: 29700.8
+[DEBUG] Volume fraction: 0.315687
+[DEBUG] Avg sensitivity magnitude: 462254
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -887485
+[DEBUG] Max sensitivity: -52514.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0103931
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 53
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 757
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.28809e+08
+[DEBUG] Max temperature: 59664.1
+[DEBUG] Min temperature: 54.0972
+[DEBUG] Avg temperature: 29635.5
+[DEBUG] Volume fraction: 0.315795
+[DEBUG] Avg sensitivity magnitude: 460168
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -882065
+[DEBUG] Max sensitivity: -52132.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00989351
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 54
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 767
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.2832e+08
+[DEBUG] Max temperature: 59539.6
+[DEBUG] Min temperature: 54.0106
+[DEBUG] Avg temperature: 29572.1
+[DEBUG] Volume fraction: 0.315903
+[DEBUG] Avg sensitivity magnitude: 458192
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -877998
+[DEBUG] Max sensitivity: -51799.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00961175
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 55
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 768
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.2785e+08
+[DEBUG] Max temperature: 59420.1
+[DEBUG] Min temperature: 53.9264
+[DEBUG] Avg temperature: 29511.3
+[DEBUG] Volume fraction: 0.31601
+[DEBUG] Avg sensitivity magnitude: 456314
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -874493
+[DEBUG] Max sensitivity: -51491.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00942324
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 56
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 774
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.2739e+08
+[DEBUG] Max temperature: 59303
+[DEBUG] Min temperature: 53.8447
+[DEBUG] Avg temperature: 29451.6
+[DEBUG] Volume fraction: 0.316118
+[DEBUG] Avg sensitivity magnitude: 454494
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -871251
+[DEBUG] Max sensitivity: -51200.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00926561
+[DEBUG] SIMP exponent updated: 1.62889
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 57
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 899
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.45546e+08
+[DEBUG] Max temperature: 64039.4
+[DEBUG] Min temperature: 52.7857
+[DEBUG] Avg temperature: 31800.3
+[DEBUG] Volume fraction: 0.316226
+[DEBUG] Avg sensitivity magnitude: 507215
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -997099
+[DEBUG] Max sensitivity: -56300.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0114691
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 58
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 887
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.45066e+08
+[DEBUG] Max temperature: 63917.4
+[DEBUG] Min temperature: 52.6902
+[DEBUG] Avg temperature: 31738.3
+[DEBUG] Volume fraction: 0.316313
+[DEBUG] Avg sensitivity magnitude: 505163
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -991118
+[DEBUG] Max sensitivity: -55859.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0106987
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 59
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 882
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.44601e+08
+[DEBUG] Max temperature: 63799.4
+[DEBUG] Min temperature: 52.5989
+[DEBUG] Avg temperature: 31678
+[DEBUG] Volume fraction: 0.316401
+[DEBUG] Avg sensitivity magnitude: 503233
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -986882
+[DEBUG] Max sensitivity: -55482.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0102446
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 60
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 887
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.44151e+08
+[DEBUG] Max temperature: 63685.2
+[DEBUG] Min temperature: 52.511
+[DEBUG] Avg temperature: 31619.8
+[DEBUG] Volume fraction: 0.316489
+[DEBUG] Avg sensitivity magnitude: 501395
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -983299
+[DEBUG] Max sensitivity: -55139.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00990585
+[DEBUG] Binary design %: 23.8095
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_60.gf
+
+======================================
+  ITERATION 61
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 895
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.43718e+08
+[DEBUG] Max temperature: 63575.3
+[DEBUG] Min temperature: 52.4265
+[DEBUG] Avg temperature: 31563.7
+[DEBUG] Volume fraction: 0.316577
+[DEBUG] Avg sensitivity magnitude: 499642
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -980056
+[DEBUG] Max sensitivity: -54819.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00962265
+[DEBUG] SIMP exponent updated: 1.71034
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 62
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 996
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.63913e+08
+[DEBUG] Max temperature: 68842.9
+[DEBUG] Min temperature: 51.3335
+[DEBUG] Avg temperature: 34176
+[DEBUG] Volume fraction: 0.316664
+[DEBUG] Avg sensitivity magnitude: 559340
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.1245e+06
+[DEBUG] Max sensitivity: -60371
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0120652
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 63
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 992
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.63472e+08
+[DEBUG] Max temperature: 68731.4
+[DEBUG] Min temperature: 51.2362
+[DEBUG] Avg temperature: 34119.3
+[DEBUG] Volume fraction: 0.31673
+[DEBUG] Avg sensitivity magnitude: 557377
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.11798e+06
+[DEBUG] Max sensitivity: -59877.1
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0110258
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 64
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 994
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.6304e+08
+[DEBUG] Max temperature: 68622.1
+[DEBUG] Min temperature: 51.1444
+[DEBUG] Avg temperature: 34063.5
+[DEBUG] Volume fraction: 0.316798
+[DEBUG] Avg sensitivity magnitude: 555529
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.11364e+06
+[DEBUG] Max sensitivity: -59466.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0104031
+[DEBUG] Binary design %: 23.8095
+
+======================================
+  ITERATION 65
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1008
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.6263e+08
+[DEBUG] Max temperature: 68518.2
+[DEBUG] Min temperature: 51.0573
+[DEBUG] Avg temperature: 34010.4
+[DEBUG] Volume fraction: 0.316865
+[DEBUG] Avg sensitivity magnitude: 553800
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.1101e+06
+[DEBUG] Max sensitivity: -59098.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00994112
+[DEBUG] Binary design %: 24.4898
+
+======================================
+  ITERATION 66
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1012
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.62231e+08
+[DEBUG] Max temperature: 68417.2
+[DEBUG] Min temperature: 50.9742
+[DEBUG] Avg temperature: 33958.8
+[DEBUG] Volume fraction: 0.316933
+[DEBUG] Avg sensitivity magnitude: 552142
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.10691e+06
+[DEBUG] Max sensitivity: -58758.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00954599
+[DEBUG] SIMP exponent updated: 1.79586
+[DEBUG] Binary design %: 24.4898
+
+======================================
+  ITERATION 67
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1118
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.84822e+08
+[DEBUG] Max temperature: 74308.6
+[DEBUG] Min temperature: 49.8566
+[DEBUG] Avg temperature: 36881
+[DEBUG] Volume fraction: 0.317
+[DEBUG] Avg sensitivity magnitude: 620269
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.27344e+06
+[DEBUG] Max sensitivity: -64829.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0122369
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 68
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1121
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.84431e+08
+[DEBUG] Max temperature: 74209.7
+[DEBUG] Min temperature: 49.7626
+[DEBUG] Avg temperature: 36830.8
+[DEBUG] Volume fraction: 0.317045
+[DEBUG] Avg sensitivity magnitude: 618430
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.2664e+06
+[DEBUG] Max sensitivity: -64293.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0108586
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 69
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1126
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.84053e+08
+[DEBUG] Max temperature: 74114.4
+[DEBUG] Min temperature: 49.6756
+[DEBUG] Avg temperature: 36782.1
+[DEBUG] Volume fraction: 0.317091
+[DEBUG] Avg sensitivity magnitude: 616740
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.26208e+06
+[DEBUG] Max sensitivity: -63862.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0100481
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 70
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1127
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.83687e+08
+[DEBUG] Max temperature: 74022.1
+[DEBUG] Min temperature: 49.5941
+[DEBUG] Avg temperature: 36735
+[DEBUG] Volume fraction: 0.317139
+[DEBUG] Avg sensitivity magnitude: 615144
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.25863e+06
+[DEBUG] Max sensitivity: -63484
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0097148
+[DEBUG] Binary design %: 25.1701
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_70.gf
+
+======================================
+  ITERATION 71
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1130
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 2.83343e+08
+[DEBUG] Max temperature: 73935.1
+[DEBUG] Min temperature: 49.5173
+[DEBUG] Avg temperature: 36690.6
+[DEBUG] Volume fraction: 0.317185
+[DEBUG] Avg sensitivity magnitude: 613655
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.25563e+06
+[DEBUG] Max sensitivity: -63140.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00944566
+[DEBUG] SIMP exponent updated: 1.88565
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 72
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1268
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.08755e+08
+[DEBUG] Max temperature: 80560.3
+[DEBUG] Min temperature: 48.3862
+[DEBUG] Avg temperature: 39977.8
+[DEBUG] Volume fraction: 0.317233
+[DEBUG] Avg sensitivity magnitude: 691996
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.44857e+06
+[DEBUG] Max sensitivity: -69827.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0117521
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 73
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1278
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.08439e+08
+[DEBUG] Max temperature: 80480.8
+[DEBUG] Min temperature: 48.3008
+[DEBUG] Avg temperature: 39937.5
+[DEBUG] Volume fraction: 0.317256
+[DEBUG] Avg sensitivity magnitude: 690378
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.44108e+06
+[DEBUG] Max sensitivity: -69266.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0100543
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 74
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1280
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.08126e+08
+[DEBUG] Max temperature: 80402.3
+[DEBUG] Min temperature: 48.2235
+[DEBUG] Avg temperature: 39897.4
+[DEBUG] Volume fraction: 0.317282
+[DEBUG] Avg sensitivity magnitude: 688895
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.43692e+06
+[DEBUG] Max sensitivity: -68835.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00945847
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 75
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1293
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.07826e+08
+[DEBUG] Max temperature: 80326.5
+[DEBUG] Min temperature: 48.1522
+[DEBUG] Avg temperature: 39858.8
+[DEBUG] Volume fraction: 0.31731
+[DEBUG] Avg sensitivity magnitude: 687508
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.43372e+06
+[DEBUG] Max sensitivity: -68464.7
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00910074
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 76
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1295
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.07543e+08
+[DEBUG] Max temperature: 80255.4
+[DEBUG] Min temperature: 48.0861
+[DEBUG] Avg temperature: 39822.5
+[DEBUG] Volume fraction: 0.317337
+[DEBUG] Avg sensitivity magnitude: 686222
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.43099e+06
+[DEBUG] Max sensitivity: -68135.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00870924
+[DEBUG] SIMP exponent updated: 1.97993
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 77
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1450
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.36313e+08
+[DEBUG] Max temperature: 87753.4
+[DEBUG] Min temperature: 46.9519
+[DEBUG] Avg temperature: 43544.3
+[DEBUG] Volume fraction: 0.317364
+[DEBUG] Avg sensitivity magnitude: 777080
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.65586e+06
+[DEBUG] Max sensitivity: -75574.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0106858
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 78
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1458
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.36083e+08
+[DEBUG] Max temperature: 87696.1
+[DEBUG] Min temperature: 46.8791
+[DEBUG] Avg temperature: 43515.5
+[DEBUG] Volume fraction: 0.317366
+[DEBUG] Avg sensitivity magnitude: 775739
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.64799e+06
+[DEBUG] Max sensitivity: -75005.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00871402
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 79
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1455
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.35856e+08
+[DEBUG] Max temperature: 87639.3
+[DEBUG] Min temperature: 46.8149
+[DEBUG] Avg temperature: 43486.5
+[DEBUG] Volume fraction: 0.317373
+[DEBUG] Avg sensitivity magnitude: 774545
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.64416e+06
+[DEBUG] Max sensitivity: -74593.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00824334
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 80
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1463
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.35643e+08
+[DEBUG] Max temperature: 87586
+[DEBUG] Min temperature: 46.7569
+[DEBUG] Avg temperature: 43459.4
+[DEBUG] Volume fraction: 0.31738
+[DEBUG] Avg sensitivity magnitude: 773460
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.64142e+06
+[DEBUG] Max sensitivity: -74251.3
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00779947
+[DEBUG] Binary design %: 25.1701
+[DEBUG] Saved intermediate result: simp_3d_solns/cylinder_iter_80.gf
+
+======================================
+  ITERATION 81
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1464
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.35445e+08
+[DEBUG] Max temperature: 87536.3
+[DEBUG] Min temperature: 46.7041
+[DEBUG] Avg temperature: 43434.1
+[DEBUG] Volume fraction: 0.317387
+[DEBUG] Avg sensitivity magnitude: 772470
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.63919e+06
+[DEBUG] Max sensitivity: -73954.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00734839
+[DEBUG] SIMP exponent updated: 2.07893
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 82
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1666
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.68242e+08
+[DEBUG] Max temperature: 96080.4
+[DEBUG] Min temperature: 45.5758
+[DEBUG] Avg temperature: 47677.2
+[DEBUG] Volume fraction: 0.317391
+[DEBUG] Avg sensitivity magnitude: 878798
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.90314e+06
+[DEBUG] Max sensitivity: -82329.4
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00920303
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 83
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1649
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.68125e+08
+[DEBUG] Max temperature: 96051.9
+[DEBUG] Min temperature: 45.5172
+[DEBUG] Avg temperature: 47663.1
+[DEBUG] Volume fraction: 0.317374
+[DEBUG] Avg sensitivity magnitude: 877842
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.89502e+06
+[DEBUG] Max sensitivity: -81770.2
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00703445
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 84
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1677
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.68008e+08
+[DEBUG] Max temperature: 96023.2
+[DEBUG] Min temperature: 45.4673
+[DEBUG] Avg temperature: 47648.5
+[DEBUG] Volume fraction: 0.317361
+[DEBUG] Avg sensitivity magnitude: 877042
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.89181e+06
+[DEBUG] Max sensitivity: -81395.8
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00658208
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 85
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1681
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.67902e+08
+[DEBUG] Max temperature: 95997.4
+[DEBUG] Min temperature: 45.4232
+[DEBUG] Avg temperature: 47635.4
+[DEBUG] Volume fraction: 0.317349
+[DEBUG] Avg sensitivity magnitude: 876349
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.88978e+06
+[DEBUG] Max sensitivity: -81098.5
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.0061294
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 86
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1684
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 3.67826e+08
+[DEBUG] Max temperature: 95978.9
+[DEBUG] Min temperature: 45.3838
+[DEBUG] Avg temperature: 47625.9
+[DEBUG] Volume fraction: 0.317333
+[DEBUG] Avg sensitivity magnitude: 875802
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -1.88839e+06
+[DEBUG] Max sensitivity: -80851.9
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00568387
+[DEBUG] SIMP exponent updated: 2.18287
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 87
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1957
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 4.0545e+08
+[DEBUG] Max temperature: 105776
+[DEBUG] Min temperature: 44.2675
+[DEBUG] Avg temperature: 52494.1
+[DEBUG] Volume fraction: 0.31732
+[DEBUG] Avg sensitivity magnitude: 1.00126e+06
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -2.20045e+06
+[DEBUG] Max sensitivity: -90394.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00756384
+[DEBUG] Binary design %: 25.1701
+
+======================================
+  ITERATION 88
+======================================
+[DEBUG] Filter convergence: OK
+[DEBUG] CG iterations: 1984
+[DEBUG] CG converged: 1
+[DEBUG] Compliance: 4.05484e+08
+[DEBUG] Max temperature: 105787
+[DEBUG] Min temperature: 44.2225
+[DEBUG] Avg temperature: 52499.6
+[DEBUG] Volume fraction: 0.317282
+[DEBUG] Avg sensitivity magnitude: 1.00085e+06
+[DEBUG] Filter convergence: OK
+[DEBUG] Min sensitivity: -2.19229e+06
+[DEBUG] Max sensitivity: -89854.6
+[DEBUG] Updated DOFs: 2380
+[DEBUG] Max density change: 0.00526119
+[DEBUG] Binary design %: 25.1701
+[DEBUG] Convergence: ACHIEVED
+
+======================================
+  SAVING RESULTS
+======================================
+[DEBUG] Mesh saved: simp_3d_solns/cylinder_thermal.mesh
+[DEBUG] Final solution saved: simp_3d_solns/cylinder_thermal_final.gf
+[DEBUG] Binary solution saved: simp_3d_solns/cylinder_thermal_binary.gf

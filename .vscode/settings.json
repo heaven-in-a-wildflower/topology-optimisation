@@ -80,7 +80,8 @@
         "variant": "cpp",
         "format": "cpp",
         "stdfloat": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "filesystem": "cpp"
     },
     "git.ignoreLimitWarning": true
 }

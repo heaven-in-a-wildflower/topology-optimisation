@@ -3,10 +3,10 @@ To compile:
 mpicxx -O3 -std=c++17 -fopenmp -I../mfem-4.8/ -I../hypre/src/hypre/include heat_cond_transient.cpp -o heat_cond_transient -L../mfem-4.8 -lmfem -L../hypre/src/hypre/lib -lHYPRE -L../metis-4.0 -lmetis -lrt -lopenblas
 
 To run:
-./heat_cond_transient -m mesh_files/through_hole.msh -tf 100 -dt 0.01 -nr 10
+./heat_cond_transient -m mesh_files/through_hole.msh -tf 10 -dt 0.01 -nr 10
 
 To visualise:
-./../glvis-4.4/glvis -m heat_cond_transient_solns/cylinder_mfem_mesh.000000 -g heat_cond_transient_solns/cylinder_parallel_solution.000000
+./../glvis-4.4/glvis -m heat_cond_transient_solns/cylinder_mfem_mesh.000000 -g heat_cond_transient_solns/cylinder_transient_solution.000000
 */
 //========================================================================
 #include "mfem.hpp"

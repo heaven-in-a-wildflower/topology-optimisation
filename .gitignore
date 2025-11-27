@@ -1,1 +1,12 @@
 mesh_files/
+step_files/
+ablation/
+simp_3d_solns/
+heat_cond_steady_state_solns/
+heat_cond_transient_solns/
+simp_steady_state_solns/
+simp_transient_solns/
+3dsimp
+simp
+heat_cond_steady_state 
+heat_cond_transient 
