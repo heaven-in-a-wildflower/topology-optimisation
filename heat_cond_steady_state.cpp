@@ -85,35 +85,42 @@ int main(int argc, char *argv[])
     }
 
     // 6. Define the Dirichlet boundary conditions.
-    // The problem has:
-    // - Attribute 1: Curved surface with convective BC (natural BC)
-    // - Attribute 2: Hot end with heat flux BC (natural BC)
-    // - Attribute 3: Cold end with fixed temperature (Dirichlet BC)
+    // Boundary attributes used (the marker arrays are 0-based, so index i
+    // marks attribute i+1); attributes the mesh does not have are skipped:
+    // - Attribute 1: heat flux BC (natural BC)
+    // - Attributes 2 and 3: convective BC (natural BC)
+    // - Attributes 4 and 5: fixed temperature of 100 (Dirichlet BC)
     Array<int> ess_tdof_list;
     Array<int> ess_bdr(pmesh->bdr_attributes.Max());
     ess_bdr = 0;
-    // Only attribute 3: Cold end (0 C) - Dirichlet BC
-    if (pmesh->bdr_attributes.Max() >= 3)
+    // Attributes 4 and 5: fixed temperature - Dirichlet BC
+    if (pmesh->bdr_attributes.Max() >= 4)
     {
-        ess_bdr[3] = 1;
-        ess_bdr[4] = 1; // attribute 3 (cold end)
+        ess_bdr[3] = 1; // attribute 4
+    }
+    if (pmesh->bdr_attributes.Max() >= 5)
+    {
+        ess_bdr[4] = 1; // attribute 5
     }
     pfespace->GetEssentialTrueDofs(ess_bdr, ess_tdof_list);
 
     // 7. Set up the solution grid function, u.
     ParGridFunction u_gf(pfespace);
-    u_gf = T_ambient; // Initial guess for the temperature is 0.
+    u_gf = T_ambient; // Initial guess for the temperature is the ambient temperature.
 
     // 8. Apply the Dirichlet boundary condition values to the grid function.
-    // Only apply to the cold end now
+    // Fixed temperature of 100 on attributes 4 and 5
     ConstantCoefficient cold_temp(100.0);
 
     Array<int> cold_bdr(pmesh->bdr_attributes.Max());
     cold_bdr = 0;
-    if (pmesh->bdr_attributes.Max() >= 3)
+    if (pmesh->bdr_attributes.Max() >= 4)
     {
-        cold_bdr[3] = 1; // Attribute 3 (cold end)
-        cold_bdr[4] = 1; // Attribute 3 (cold end)
+        cold_bdr[3] = 1; // attribute 4
+    }
+    if (pmesh->bdr_attributes.Max() >= 5)
+    {
+        cold_bdr[4] = 1; // attribute 5
     }
     u_gf.ProjectBdrCoefficient(cold_temp, cold_bdr);
 
@@ -124,8 +131,9 @@ int main(int argc, char *argv[])
     if (myid == 0)
     {
         cout << "\nStarting steady-state solver with Picard iteration..." << endl;
-        cout << "Heat flux boundary condition: " << heat_flux << " applied to boundary attribute 2" << endl;
-        cout << "Convective boundary: h = " << h_conv << ", T_ambient = " << T_ambient << " applied to boundary attribute 1" << endl;
+        cout << "Heat flux boundary condition: " << heat_flux << " applied to boundary attribute 1" << endl;
+        cout << "Convective boundary: h = " << h_conv << ", T_ambient = " << T_ambient << " applied to boundary attributes 2 and 3" << endl;
+        cout << "Fixed temperature: 100 applied to boundary attributes 4 and 5" << endl;
     }
 
     // Create a HypreParVector for the previous iteration's solution
@@ -152,10 +160,13 @@ int main(int argc, char *argv[])
         ConstantCoefficient h_coeff(h_conv);
         Array<int> conv_bdr(pmesh->bdr_attributes.Max());
         conv_bdr = 0;
-        if (pmesh->bdr_attributes.Max() >= 1)
+        if (pmesh->bdr_attributes.Max() >= 2)
         {
-            conv_bdr[1] = 1; // attribute 1 (curved surface with convection)
-            conv_bdr[2] = 1; // attribute 1 (curved surface with convection)
+            conv_bdr[1] = 1; // attribute 2 (convection)
+        }
+        if (pmesh->bdr_attributes.Max() >= 3)
+        {
+            conv_bdr[2] = 1; // attribute 3 (convection)
         }
         a.AddBoundaryIntegrator(new MassIntegrator(h_coeff), conv_bdr);
 
@@ -165,14 +176,14 @@ int main(int argc, char *argv[])
         ParLinearForm b(pfespace);
         b = 0.0;
 
-        // Add heat flux boundary condition on attribute 2
+        // Add heat flux boundary condition on attribute 1
         // The weak form contribution is: ∫_Γ q * v dΓ where q is the heat flux
         ConstantCoefficient heat_flux_coeff(heat_flux);
         Array<int> flux_bdr(pmesh->bdr_attributes.Max());
         flux_bdr = 0;
-        if (pmesh->bdr_attributes.Max() >= 2)
+        if (pmesh->bdr_attributes.Max() >= 1)
         {
-            flux_bdr[0] = 1; // attribute 2 (heat flux boundary)
+            flux_bdr[0] = 1; // attribute 1 (heat flux boundary)
         }
         b.AddBdrFaceIntegrator(new BoundaryLFIntegrator(heat_flux_coeff), flux_bdr);
 

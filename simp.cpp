@@ -40,7 +40,7 @@ public:
         Vector x(coords, T.GetSpaceDim());
         T.Transform(ip, x);
 
-        // Heat source at center
+        // Heat source over the whole domain (earlier placements are commented out)
         // if (x(0) < 0.01 && x(1)>0.49 && x(1)<0.51)
         // if (x(0) > 0.495 && x(0) < 0.505 && x(1) > 0.495 && x(1) < 0.505)
         // if (x(0) < 0.01 || x(0) > 0.96 || x(1) < 0.01 || x(1) > 0.96)
@@ -55,7 +55,7 @@ public:
     }
 };
 
-// Convection coefficient - FULL BOUNDARY
+// Convection coefficient - only on a strip in the middle of the left edge
 class LocalConvectionCoeff : public Coefficient
 {
 public:
@@ -67,8 +67,8 @@ public:
         Vector x;
         T.Transform(ip, x);
 
-        // Convection on ALL boundaries (option 1: natural BC approach)
-        // This ensures sufficient heat dissipation
+        // Convection only on the left-edge strip x < 0.01, 0.45 < y < 0.55
+        // (option 1: natural BC approach); other choices are commented out
         // if (x(0) < 0.01 || x(0) > 0.96 || x(1) < 0.01 || x(1) > 0.96)
         // if ((x(0) > 0 && x(0) < 0.01 && x(1) > 0 && x(1) < 0.01) ||
         //     (x(0) > 0.96 && x(0) < 1 && x(1) > 0 && x(1) < 0.01) ||
@@ -266,10 +266,10 @@ void ComputeSteadyStateSensitivities(
             double k_max = 1.0;
             double dk_drho = (k_max - k_min) * simp_exponent * pow(rho_ip, simp_exponent - 1.0);
 
-            // compute local sensitivity contribution : ∂ρ/∂J​=−(∂ρ/∂k)*​∣∇T∣**2
+            // compute local sensitivity contribution : ∂J/∂ρ = −(∂k/∂ρ) * |∇T|**2
             double local_sensitivity = -dk_drho * grad_T_squared;
 
-            // accumulate weighted density
+            // accumulate weighted sensitivity
             for (int j = 0; j < dof; j++)
                 elem_sens(j) += local_sensitivity * shape(j) * w;
         }
@@ -292,7 +292,7 @@ int main(int argc, char *argv[])
     // ========================================================================
 
     // Choose boundary condition approach:
-    // Option 1: Use convection on full boundary (RECOMMENDED for steady-state)
+    // Option 1: Use convection on the left-edge strip set in LocalConvectionCoeff
     // Option 2: Use fixed temperature on one edge (classical approach)
     const bool USE_CONVECTION_BC = true;  // Set to false for Dirichlet BC
 

@@ -6,7 +6,7 @@ To run:
 ./heat_cond_transient -m mesh_files/through_hole.msh -tf 100 -dt 0.01 -nr 10
 
 To visualise:
-./../glvis-4.4/glvis -m heat_cond_transient_solns/cylinder_mfem_mesh.000000 -g heat_cond_transient_solns/cylinder_parallel_solution.000000
+./../glvis-4.4/glvis -m heat_cond_transient_solns/cylinder_mfem_mesh.000000 -g heat_cond_transient_solns/cylinder_transient_solution.000000
 */
 //========================================================================
 #include "mfem.hpp"
@@ -20,7 +20,8 @@ using namespace std;
 using namespace mfem;
 using namespace chrono;
 namespace fs = std::filesystem;
-// Parallel Heat equation: du/dt = kappa * Laplacian(u)
+// Parallel heat equation: rho*cp * du/dt = kappa * Laplacian(u),
+// with heat-flux and convective boundary terms
 class ParHeatConductionOperator : public TimeDependentOperator
 {
 private:
@@ -349,7 +350,7 @@ int main(int argc, char *argv[])
     args.AddOption(&order, "-o", "--order", "Finite element order.");
     args.AddOption(&t_final, "-tf", "--t-final", "Final time.");
     args.AddOption(&dt, "-dt", "--time-step", "Time step size.");
-    args.AddOption(&vis_steps, "-vs", "--visualization-steps", "Visualize every n-th timestep.");
+    args.AddOption(&vis_steps, "-vs", "--visualization-steps", "Unused: no visualization is done during the run.");
     args.AddOption(&use_implicit, "-imp", "--implicit", "-no-imp", "--explicit",
                    "Use implicit (backward Euler) time integration for stability.");
     args.AddOption(&n_report, "-nr", "--n_report", "Print timings every n_report time steps");
@@ -445,7 +446,8 @@ int main(int argc, char *argv[])
              << "], length = " << cylinder_length << endl;
     }
 
-    // Initialize with smooth quadratic temperature profile
+    // Initial condition: uniform ambient temperature. The smooth profiles
+    // below are disabled; uncomment one of them to use it instead.
     ParGridFunction u_gf(pfespace);
     u_gf = T_amb_val;
     // Choose your preferred profile:
@@ -486,8 +488,8 @@ int main(int argc, char *argv[])
 
     if (myid == 0)
     {
-        cout << "Smooth initial conditions set:" << endl;
-        cout << "Profile: Quadratic with 100°C at ends" << endl;
+        cout << "Initial conditions set:" << endl;
+        cout << "Profile: uniform at T_amb = " << T_amb_val << "°C" << endl;
         // cout << "Hot boundary DOFs: " << ess_tdof_list_hot.Size() << endl;
         cout << "Max initial temperature: " << u_gf.Max() << "°C" << endl;
         cout << "Min initial temperature: " << u_gf.Min() << "°C" << endl;
@@ -495,7 +497,7 @@ int main(int argc, char *argv[])
 
     // Initialize parallel heat conduction operator
     ParHeatConductionOperator oper(*pfespace, kappa, rho_cp, ess_bdr, conv_bdr, h_conv_val, T_amb_val, flux_bdr, q_val);
-    // Calculate stable time step based on mesh and alpha
+    // Find the minimum element size (the stable-time-step check below is disabled)
     double h_min = pmesh.GetElementSize(0);
     for (int i = 1; i < pmesh.GetNE(); i++)
     {
@@ -656,8 +658,8 @@ int main(int argc, char *argv[])
     }
     if (myid == 0)
     {
-        cout << "\nParallel solution saved to cylinder_parallel_solution.xxxxxx files" << endl;
-        cout << "Parallel mesh saved to cylinder_parallel_mesh.xxxxxx files" << endl;
+        cout << "\nParallel solution saved to " << output_dir << "/" << transient_sol << ".xxxxxx files" << endl;
+        cout << "Parallel mesh saved to " << output_dir << "/" << mfem_mesh << ".xxxxxx files" << endl;
         cout << "\nNote: For full steady-state, you may need longer simulation time." << endl;
         cout << "The parallel computation distributes the mesh across " << num_procs << " processors." << endl;
     }

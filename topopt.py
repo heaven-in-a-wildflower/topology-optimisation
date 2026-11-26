@@ -115,7 +115,7 @@ def main(nelx,nely,volfrac,penal,rmin,ft):
 					loop,obj,(g+volfrac*nelx*nely)/(nelx*nely),change))
 	# Make sure the plot stays and that the shell remains	
 	plt.show()
-	raw_input("Press any key...")
+	input("Press Enter to exit...")
 #element stiffness matrix
 def lk():
 	E=1

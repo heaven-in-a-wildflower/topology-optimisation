@@ -48,7 +48,7 @@ public:
         Vector x(coords, T.GetSpaceDim());
         T.Transform(ip, x);
 
-        // Heat source along right edge
+        // Heat source along the left edge (x < 0.01)
         if (x(0) < 0.01)
         //     return source_magnitude;
         // if (x(0) > 0.495 && x(0) < 0.505 && x(1) > 0.495 && x(1) < 0.505)
@@ -74,7 +74,7 @@ public:
         Vector x;
         T.Transform(ip, x);
 
-        // Convection on left edge
+        // Convection on the right edge (x > 0.99); other choices are commented out
         // if ((x(0) > 0 && x(0) < 0.01 && x(1) > 0 && x(1) < 0.01) ||
         //     (x(0) > 0.99 && x(0) < 1 && x(1) > 0 && x(1) < 0.01) ||
         //     (x(0) > 0.99 && x(0) < 1 && x(1) > 0.99 && x(1) < 1) ||
@@ -287,7 +287,7 @@ void ComputeTransientSensitivities(
                 for (int d = 0; d < dim; d++)
                     grad_T_squared += grad_T(d) * grad_T(d);
 
-                // Sensitivity: dk/drho * |∇T|²
+                // Sensitivity contribution: -dk/drho * |∇T|² * dt
                 double k_min = rho_min * 1e-3;
                 double k_max = 1.0;
                 double dk_drho = (k_max - k_min) * simp_exponent * pow(rho_ip, simp_exponent - 1.0);
@@ -317,7 +317,7 @@ int main(int argc, char *argv[])
     // Material properties
     const double rho_material = 2700.0; // kg/m³ (aluminum)
     const double cp = 900.0;            // J/(kg·K) (specific heat)
-    const double k_thermal = 100.0;     // W/(m·K) (normalized)
+    const double k_thermal = 100.0;     // Unused: ThermalConductivityCoeff uses k_max = 1
 
     // Time parameters
     const double heating_duration = 10.0; // seconds (KEY PARAMETER TO VARY!)
@@ -364,6 +364,10 @@ int main(int argc, char *argv[])
     // ========================================================================
     // BOUNDARY CONDITIONS
     // ========================================================================
+    // Collects the left-edge DOFs as a "cold" boundary. They are NOT
+    // enforced: the lines that would use them are commented out in the
+    // forward analysis below, so the only boundary condition applied is
+    // convection.
 
     Array<int> ess_tdof_cold;
     double tol = 1e-6;
@@ -391,7 +395,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    cout << "Cold boundary DOFs: " << ess_tdof_cold.Size() << endl;
+    cout << "Left-edge (cold) DOFs found, not enforced: " << ess_tdof_cold.Size() << endl;
 
     // ========================================================================
     // INITIALIZE FIELDS
@@ -491,7 +495,7 @@ int main(int argc, char *argv[])
             q_form.Assemble();
             rhs += q_form;
 
-            // Form linear system with BCs
+            // Form linear system (ess_tdof_list is empty, so no Dirichlet BCs)
             OperatorPtr A_bc;
             Vector B, X;
             Array<int> ess_tdof_list;

@@ -1,4 +1,13 @@
 /*
+To compile (same command as the other programs; untested for this file):
+mpicxx -O3 -std=c++17 -fopenmp -I../mfem-4.8/ -I../hypre/src/hypre/include levelset_cantilever.cpp -o levelset_cantilever -L../mfem-4.8 -lmfem -L../hypre/src/hypre/lib -lHYPRE -L../metis-4.0 -lmetis -lrt -lopenblas
+
+To run:
+./levelset_cantilever
+
+To visualise:
+./../glvis-4.4/glvis -m levelset_results/cantilever.mesh -g levelset_results/density_final.gf
+
 Fixed Level-Set Topology Optimization - Corrected Velocity
 Key insight: The velocity should REDUCE compliance, not just follow Eq. 24 blindly
 We want to ADD material where stress is high, REMOVE where stress is low

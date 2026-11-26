@@ -22,7 +22,7 @@ This README describes the `master` branch. The `submission` branch is a separate
 | `simp_transient.cpp` | Transient thermal topology optimisation with SIMP on a 2D square |
 | `levelset_cantilever.cpp` | Level-set compliance minimisation for a 2D cantilever. The commit that added it calls it "non-functional" |
 | `topopt.py` | Aage & Johansen's 165-line Python SIMP code for minimum compliance (reference) |
-| `heat_cond_steady_state`, `heat_cond_transient`, `simp`, `simp_transient`, `levelset_cantilever` | Prebuilt Linux x86-64 binaries of the programs above |
+| `heat_cond_steady_state`, `heat_cond_transient`, `simp`, `simp_transient`, `levelset_cantilever` | Prebuilt Linux x86-64 binaries of the programs above. They were built before later fixes to the source, so some printed messages are outdated |
 | `heat_cond_steady_state_solns/`, `heat_cond_transient_solns/` | Saved meshes and temperature fields from earlier heat-conduction runs |
 | `simp_steady_state_solns/`, `simp_transient_solns/` | Saved meshes and final densities (continuous and thresholded) from earlier SIMP runs |
 | `levelset_results/` | Saved mesh, density, level-set and displacement fields, plus `history.txt` (compliance and volume per iteration) |
@@ -46,7 +46,7 @@ These use first-order H1 elements, distributed across MPI ranks with `ParMesh`. 
 
 - Solves −∇·(k(T)∇T) = 0 with a temperature-dependent conductivity k = κ + αT. By default κ = 205 and α = 0.01.
 - Handles the nonlinearity with Picard iteration: at most 100 iterations, stopping when the relative change falls below 10⁻⁶.
-- Boundary conditions, by mesh boundary attribute:
+- Boundary conditions, by mesh boundary attribute. Attributes the mesh doesn't have are skipped:
 
   | Attribute | Condition | Default |
   | --- | --- | --- |
@@ -62,6 +62,7 @@ These use first-order H1 elements, distributed across MPI ranks with `ParMesh`. 
 - Solves ρc_p ∂T/∂t = ∇·(κ∇T).
 - Boundary conditions: heat flux q = 10⁶ on attribute 1, and convection (h = 20, T_amb = 10) on attribute 2. There are no fixed-temperature boundaries.
 - Material values: ρ = 2700 and c_p = 900, as for aluminium, but κ = 10⁶.
+- Starts from a uniform temperature equal to T_amb. Smooth quadratic and cosine starting profiles are in the code but commented out.
 - Time stepping:
   - The default (`-imp`) is backward Euler: (M + Δt K) Tⁿ⁺¹ = M Tⁿ + Δt f. The PCG/AMG solver is set up once and reused while Δt stays the same.
   - `-no-imp` switches to forward Euler with a lumped mass matrix. The run stops with "Instability detected!" if |∂T/∂t| exceeds 10⁶.
@@ -125,7 +126,7 @@ mpicxx -O3 -std=c++17 -fopenmp -I../mfem-4.8/ -I../hypre/src/hypre/include simp.
     -L../mfem-4.8 -lmfem -L../hypre/src/hypre/lib -lHYPRE -L../metis-4.0 -lmetis -lrt -lopenblas
 ```
 
-Replace `simp` with `heat_cond_steady_state`, `heat_cond_transient` or `simp_transient` as needed. `levelset_cantilever.cpp` has no build comment. The same command with its file name should work, but this has not been tested.
+Replace `simp` with `heat_cond_steady_state`, `heat_cond_transient`, `simp_transient` or `levelset_cantilever` as needed. The build comment in `levelset_cantilever.cpp` was added later, following the other files, and has not been tested.
 
 The committed binaries link MFEM and hypre statically. `readelf` shows they only need Open MPI's `libmpi.so.40` and `libmpi_cxx.so.40` plus the standard C/C++ runtime.
 
@@ -154,23 +155,6 @@ python3 topopt.py [nelx nely volfrac rmin penal ft]   # defaults: 180 60 0.4 5.4
 
 ## Notes and known issues
 
-### Missing inputs
-
 - The heat solvers need `.msh` meshes that are not in the repo; the default mesh name is `cylinder_3d.msh`.
 - A mesh generated from `step_files/cylinder.step` must use the boundary-attribute numbering listed above.
-- `heat_cond_steady_state` accesses boundary attribute 5, so its mesh needs at least five boundary attributes.
-
-### Code comments that don't match the code
-
-- **`heat_cond_steady_state.cpp`:** the comments describe the fixed-temperature boundary as "attribute 3" at 0 °C. The code fixes attributes 4 and 5 at 100.
-- **`heat_cond_transient.cpp`:**
-  - The program starts from a uniform 10 °C. The quadratic and cosine initial profiles are commented out, but it still prints "Profile: Quadratic with 100°C at ends".
-  - The visualisation comment at the top names `cylinder_parallel_solution`, but the program writes `cylinder_transient_solution`.
-- **`simp_transient.cpp`:**
-  - It collects the left-edge degrees of freedom as a "cold" boundary but never enforces them.
-  - A comment says the heat source is on the right edge, but the code puts it on the left edge (x < 0.01).
-
-### Other
-
-- `topopt.py` ends with `raw_input()`, which does not exist in Python 3. Under Python 3 it raises a `NameError` once the optimisation and plot are done.
 - In `logs.txt`, the `dump.txt` level-set variant ran all 100 iterations with the volume fraction stuck at about 0.338, against its target of 0.4.
